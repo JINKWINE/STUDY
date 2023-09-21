@@ -1,2 +1,2 @@
 # STUDY
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+프로그래머스에서 코딩테스트 매일 최소 한 문제씩!!
