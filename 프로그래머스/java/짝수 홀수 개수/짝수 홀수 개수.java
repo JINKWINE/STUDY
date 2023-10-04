@@ -6,7 +6,7 @@ class Solution {
         
         for(int i = 0; i < num_list.length; i++){
             if(num_list[i] % 2 == 0){
-                even++;
+                even++; //짝수 찾을 때마다 1씩 증가
             }else{
                 odd++;
             }
