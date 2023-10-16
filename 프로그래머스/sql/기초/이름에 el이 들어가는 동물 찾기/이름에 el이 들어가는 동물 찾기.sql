@@ -1,0 +1,5 @@
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+WHERE UPPER(NAME) LIKE '%EL%' --name컬럼의 모든 값 대문자로 변환 후 목표 값 색인
+  AND ANIMAL_TYPE = 'Dog'
+ORDER BY NAME
