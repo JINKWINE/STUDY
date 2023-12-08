@@ -11,3 +11,6 @@ public class Solution {
         }
     }
 }
+
+//삼항 연산자로도 표현 가능
+ System.out.print(n + " is "+(n % 2 == 0 ? "even" : "odd"));
