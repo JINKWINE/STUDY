@@ -10,3 +10,13 @@ class Solution {
         return answer;
     }
 }
+
+
+//더 간단한 풀이
+import java.util.*;
+class Solution {
+    public int[] solution(int[] num_list, int n) {
+        int[] a= Arrays.copyOfRange(num_list, n-1, num_list.length);
+        return a;
+    }
+}
