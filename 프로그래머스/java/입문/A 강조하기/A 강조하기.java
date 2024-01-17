@@ -12,3 +12,14 @@ class Solution {
         return answer;
     }
 }
+
+
+//훨씬 더 간단한 방법
+class Solution {
+    public String solution(String myString) {
+        myString = myString.toLowerCase();
+        myString = myString.replace('a', 'A');
+
+        return myString;
+    }
+}
