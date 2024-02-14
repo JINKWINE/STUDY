@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int l, int r) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>(); //
         int count = 0;
         for(int i = l; i <= r; i++){
             String str = i + "";
