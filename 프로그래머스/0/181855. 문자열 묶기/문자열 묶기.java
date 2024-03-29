@@ -1,21 +1,23 @@
 class Solution {
     public int solution(String[] strArr) {
-        int[] countArr = new int[31]; // 문자열의 최대 길이는 30이므로 31로 설정
-        int maxCount = 0;
-
-        // 각 문자열의 길이를 countArr에 카운트
-        for (String str : strArr) {
-            countArr[str.length()]++;
+        int[] countArr = new int[strArr.length];
+        int answer = 0;
+        
+        for(int i = 0; i < strArr.length; i++) {
+            countArr[i] = strArr[i].length();
         }
 
-        // 가장 많이 등장한 문자열의 개수 찾기
-        for (int count : countArr) {
-            if (count > maxCount) {
-                maxCount = count;
+        for(int i = 0; i < countArr.length; i++) {
+            int count = 1; // 각 길이별 중복 횟수를 세기 위해 반복마다 초기화
+            for(int j = i + 1; j < countArr.length; j++) {
+                if(countArr[i] == countArr[j]) {
+                    count++;
+                }
+            }
+            if(count > answer) {
+                answer = count;
             }
         }
-
-        // 가장 많이 등장한 문자열의 개수 반환
-        return maxCount;
+        return answer;
     }
 }
